@@ -12,8 +12,7 @@ public class CommissionRequest {
     private String status;
 
     private CommissionDetails details;
-
-    // FIX: constructor was private — changed to public so it can be instantiated
+    
     public CommissionRequest(String clientUsername, String artistUsername, String category,
                              String description, double budget, String deadline) {
         this.clientUsername = clientUsername;
@@ -29,11 +28,11 @@ public class CommissionRequest {
     // Getter Methods
     public String getClientUsername() { return clientUsername; }
     public String getArtistUsername()  { return artistUsername; }
-    public String getCategory()        { return category; }
-    public String getDescription()     { return description; }
-    public double getBudget()          { return budget; }
-    public String getDeadline()        { return deadline; }
-    public String getStatus()          { return status; }
+    public String getCategory() { return category; }
+    public String getDescription()  { return description; }
+    public double getBudget() { return budget; }
+    public String getDeadline() { return deadline; }
+    public String getStatus() { return status; }
     public CommissionDetails getDetails() { return details; }
 
     // FIX: setStatus was missing — Artist needs this to Accept/Decline
@@ -59,7 +58,7 @@ public class CommissionRequest {
         }
 
         public String getDescription() { return description; }
-        public double getBudget()      { return budget; }
-        public String getDeadline()    { return deadline; }
+        public double getBudget() { return budget; }
+        public String getDeadline() { return deadline; }
     }
 }
